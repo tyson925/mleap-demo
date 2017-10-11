@@ -1,0 +1,65 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.netflix.nebula:gradle-resolution-rules-plugin:5.0.0"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: "nebula.resolution-rules"
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    nebulaResolutionRules {
+        optional = ['slf4j-bridge']
+    }
+
+    compile "org.scala-lang:scala-library:$scala_version.11"
+    compile "org.apache.spark:spark-core_$scala_version:2.2.0"
+    compile "org.apache.spark:spark-sql_$scala_version:2.2.0"
+    compile "org.apache.spark:spark-mllib_$scala_version:2.2.0"
+
+    compile "com.fasterxml.jackson.module:jackson-module-scala_$scala_version:$jackson_version"
+
+    compile "com.fasterxml.jackson.core:jackson-core:$jackson_version"
+    compile "com.fasterxml.jackson.core:jackson-databind:$jackson_version"
+    compile "com.fasterxml.jackson.core:jackson-annotations:$jackson_version"
+//    compile "com.fasterxml.jackson.dataformat:jackson-dataformats-text:$jackson_version"
+    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:$jackson_version"
+
+    compile "ml.combust.mleap:mleap-spark-base_$scala_version:$mleap_version"
+    compile "ml.combust.mleap:mleap-spark_$scala_version:$mleap_version"
+    compile "ml.combust.mleap:mleap-spark-extension_$scala_version:$mleap_version"
+    // https://mvnrepository.com/artifact/ml.combust.mleap/mleap-runtime_2.11
+    compile "ml.combust.mleap:mleap-runtime_$scala_version:$mleap_version"
+
+    compile "com.databricks:spark-avro_$scala_version:3.2.0"
+
+
+    compile "com.typesafe.akka:akka-actor_$scala_version:2.5.4"
+    compile "com.typesafe.akka:akka-stream-experimental_$scala_version:2.0.5"
+
+
+    compile "com.amazonaws:aws-java-sdk-s3:$aws_client_version"
+    compile "com.amazonaws:aws-java-sdk-emr:$aws_client_version"
+    compile 'log4j:log4j:1.2.17'
+
+    testCompile "org.scalatest:scalatest_2.11:3.0.0"
+    testCompile "junit:junit:4.12"
+}

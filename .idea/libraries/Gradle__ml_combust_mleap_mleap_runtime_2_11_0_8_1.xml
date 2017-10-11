@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ml.combust.mleap:mleap-runtime_2.11:0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-runtime_2.11/0.8.1/2fc40436bf39d00a96e3f06e92d6997700c893e9/mleap-runtime_2.11-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-runtime_2.11/0.8.1/2d0c9cd24bba1e80b855dfd1d391e89ed3ee2c2b/mleap-runtime_2.11-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

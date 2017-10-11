@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ml.combust.mleap:mleap-tensor_2.11:0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-tensor_2.11/0.8.1/188b33c91ab9fe2058a81d10f548d1fac06ba7cd/mleap-tensor_2.11-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-tensor_2.11/0.8.1/4e131fb238ba74c71495248e256e0749f9c8170f/mleap-tensor_2.11-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

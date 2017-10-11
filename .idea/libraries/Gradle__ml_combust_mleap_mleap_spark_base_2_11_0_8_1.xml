@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ml.combust.mleap:mleap-spark-base_2.11:0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-spark-base_2.11/0.8.1/5ca133fcb83959386bf71541ea3fbfb8e42fefc6/mleap-spark-base_2.11-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.mleap/mleap-spark-base_2.11/0.8.1/c0f21a5e5843b986d25fb13bdc5ae85f59f0edb1/mleap-spark-base_2.11-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

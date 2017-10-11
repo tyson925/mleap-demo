@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jsuereth:scala-arm_2.11:2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jsuereth/scala-arm_2.11/2.0/aa0bf0cfff9dea924539b51ea975f68d38ffe218/scala-arm_2.11-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jsuereth/scala-arm_2.11/2.0/43a8bc487c82e241a76428c6078a87e0a881d33d/scala-arm_2.11-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

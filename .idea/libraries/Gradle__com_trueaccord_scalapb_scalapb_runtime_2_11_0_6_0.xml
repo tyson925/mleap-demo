@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.trueaccord.scalapb:scalapb-runtime_2.11:0.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trueaccord.scalapb/scalapb-runtime_2.11/0.6.0/d9dcfc2efe2542cf99e16104cedb071e2ed8f0f6/scalapb-runtime_2.11-0.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trueaccord.scalapb/scalapb-runtime_2.11/0.6.0/84539d3578b8bf34d1506af1ac24e60a2c2a921d/scalapb-runtime_2.11-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

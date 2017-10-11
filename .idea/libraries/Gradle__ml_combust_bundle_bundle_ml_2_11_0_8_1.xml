@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ml.combust.bundle:bundle-ml_2.11:0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.bundle/bundle-ml_2.11/0.8.1/432c754cc25e496a5524abaa843b751d0451b3d7/bundle-ml_2.11-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ml.combust.bundle/bundle-ml_2.11/0.8.1/f74b283eb661edf0911542c953c572c317de020b/bundle-ml_2.11-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

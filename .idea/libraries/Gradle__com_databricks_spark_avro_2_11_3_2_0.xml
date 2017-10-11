@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.databricks:spark-avro_2.11:3.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.databricks/spark-avro_2.11/3.2.0/c907a777f90aae101f0c538a47a5a4d40f63da49/spark-avro_2.11-3.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.databricks/spark-avro_2.11/3.2.0/29c441dced921d424eaf79120a701027d15c25ce/spark-avro_2.11-3.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
