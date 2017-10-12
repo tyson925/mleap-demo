@@ -1,4 +1,4 @@
-package org.example.mleap
+package org.example.mleapDemo
 
 import java.io.File
 
@@ -38,7 +38,7 @@ object LogregExample {
 
   def writePipeline(pipelineModel: PipelineModel, dataFrame: DataFrame, fileName: String): Unit = {
     val file = new File(fileName)
-    file.getParentFile.mkdirss
+    file.getParentFile.mkdirs
     val sbc = SparkBundleContext().withDataset(pipelineModel.transform(dataFrame))
     for (bundle <- managed(BundleFile(file))) {
       pipelineModel.writeBundle.format(SerializationFormat.Json).save(bundle)(sbc)
