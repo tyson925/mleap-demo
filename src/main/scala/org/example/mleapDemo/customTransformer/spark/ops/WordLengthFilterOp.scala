@@ -1,4 +1,4 @@
-package com.blackswan.mleapDemo.customTransformer.spark.ops
+package org.example.mleapDemo.customTransformer.spark.ops
 
 import ml.combust.bundle.BundleContext
 import ml.combust.bundle.dsl.{Model, Node, NodeShape, _}

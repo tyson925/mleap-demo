@@ -1,4 +1,4 @@
-package com.blackswan.mleapDemo.customTransformer.mleap.ops
+package org.example.mleapDemo.customTransformer.mleap.ops
 
 import ml.combust.bundle.BundleContext
 import ml.combust.bundle.dsl._

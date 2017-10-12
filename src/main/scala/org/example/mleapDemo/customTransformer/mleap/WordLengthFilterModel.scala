@@ -1,4 +1,4 @@
-package com.blackswan.mleapDemo.customTransformer.mleap
+package org.example.mleapDemo.customTransformer.mleap
 
 import ml.combust.mleap.core.Model
 import ml.combust.mleap.core.types.{BasicType, ListType, StructType}

@@ -1,4 +1,4 @@
-package com.blackswan.mleapDemo.customTransformer.mleap
+package org.example.mleapDemo.customTransformer.mleap
 
 import ml.combust.mleap.core.types.NodeShape
 import ml.combust.mleap.runtime.function.UserDefinedFunction

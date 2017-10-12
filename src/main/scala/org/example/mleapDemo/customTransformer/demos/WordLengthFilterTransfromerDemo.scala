@@ -1,5 +1,4 @@
-package com.blackswan.mleapDemo.customTransformer.demos
-
+package org.example.mleapDemo.customTransformer.demos
 
 import org.apache.spark.ml.feature.{CountVectorizer, StopWordsRemover, Tokenizer}
 import org.apache.spark.ml.mleap.feature.WordLengthFilter
