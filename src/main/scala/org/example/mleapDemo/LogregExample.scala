@@ -12,6 +12,7 @@ import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import resource.managed
 import ml.combust.mleap.spark.SparkSupport._
 import org.apache.spark.ml
+
 object LogregExample {
 
 
