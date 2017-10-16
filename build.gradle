@@ -8,9 +8,11 @@ buildscript {
     }
     dependencies {
         classpath "com.netflix.nebula:gradle-resolution-rules-plugin:5.0.0"
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
     }
 }
 
+apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'java'
 apply plugin: 'scala'
 apply plugin: 'idea'
@@ -25,15 +27,43 @@ repositories {
     }
 }
 
+shadowJar {
+    mergeServiceFiles()
+
+    exclude 'META-INF/services/com.fasterxml.*'
+    dependencies {
+        include(dependency('com.fasterxml.jackson.*:.*:.*'))
+        include(dependency('com.amazonaws.*:.*:.*'))
+        include(dependency('org.apache:.*:.*'))
+        include(dependency("org.apache.httpcomponents:.*:.*"))
+        include(dependency("com.google.code.gson:.*:.*"))
+        include(dependency("joda-time:.*:.*"))
+        include(dependency("log4j:.*:.*"))
+        include(dependency("org.jsoup:.*:.*"))
+        include(dependency("org.jodd:.*:.*"))
+        include(dependency("stax:.*:.*"))
+        include(dependency("org.codehaus.woodstox:.*:.*"))
+        include(dependency("commons-.*:.*:.*"))
+        include(dependency("org.slf4j:.*:.*"))
+        include(dependency("ch.qos.logback:.*:.*"))
+        include(dependency("org.apache.hadoop.*:.*:.*"))
+        include(dependency("org.jetbrains.*:.*:.*"))
+        include(dependency("org.scala-lang.*:.*:.*"))
+    }
+    relocate("com.fasterxml", "shaded.com.fasterxml")
+
+}
+
+
 dependencies {
     nebulaResolutionRules {
         optional = ['slf4j-bridge']
     }
 
     compile "org.scala-lang:scala-library:$scala_version.11"
-    compile "org.apache.spark:spark-core_$scala_version:2.2.0"
-    compile "org.apache.spark:spark-sql_$scala_version:2.2.0"
-    compile "org.apache.spark:spark-mllib_$scala_version:2.2.0"
+    compile "org.apache.spark:spark-core_$scala_version:$spark_version"
+    compile "org.apache.spark:spark-sql_$scala_version:$spark_version"
+    compile "org.apache.spark:spark-mllib_$scala_version:$spark_version"
 
     compile "com.fasterxml.jackson.module:jackson-module-scala_$scala_version:$jackson_version"
 
@@ -42,6 +72,8 @@ dependencies {
     compile "com.fasterxml.jackson.core:jackson-annotations:$jackson_version"
 //    compile "com.fasterxml.jackson.dataformat:jackson-dataformats-text:$jackson_version"
     compile "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:$jackson_version"
+    compile "com.fasterxml.jackson.module:jackson-module-scala_$scala_version:$jackson_version"
+
 
     compile "ml.combust.mleap:mleap-spark-base_$scala_version:$mleap_version"
     compile "ml.combust.mleap:mleap-spark_$scala_version:$mleap_version"
